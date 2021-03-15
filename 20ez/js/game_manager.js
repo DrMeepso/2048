@@ -73,8 +73,8 @@ GameManager.prototype.addRandomTile = function () {
           &&
           !!self.grid.cells[cell.x + x][cell.y + y]
         ) {
-          var tocheck = self.grid.cells[cell.x + x][cell.y + y];
-          if (Math.random() < 0.8 && tocheck.value < bvalue) {
+          var tocheck = self.grid.cells[cell.x - x][cell.y - y];
+          if (Math.random() < 0.8 && tocheck.value > bvalue) {
             bcell = cell;
             bvalue = tocheck.value;
           }
