@@ -21,7 +21,6 @@ GameManager.prototype.restart = function () {
 
 // Keep playing after winning
 GameManager.prototype.keepPlaying = function () {
-alert("you can no longer keep playing")
 GameManager.prototype.restart()
 };
 
