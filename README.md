@@ -5,7 +5,7 @@
 # This is 2
 2 is a 2048 clone but with the tiles decending in value!
 
-## to do
+## TODO
 - [x] Tiles merging down
 - [X] Tile colors remaped
 - [X] Get score working
