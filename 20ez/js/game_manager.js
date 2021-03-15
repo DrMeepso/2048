@@ -286,7 +286,7 @@ GameManager.prototype.positionsEqual = function (first, second) {
 };
 
 // Score reset code if the score sys has updated
-GameVer = 1.002
+GameVer = 1.005
 if (localStorage.GV == undefined) {
 localStorage.GV = GameVer
 } else {
