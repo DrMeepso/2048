@@ -98,7 +98,7 @@ KeyboardInputManager.prototype.restart = function (event) {
   this.emit("restart");
 };
 
-KeyboardInputManager.prototype.keepPlaying = function (event) {
-  event.preventDefault();
-  this.emit("keepPlaying");
-};
+//KeyboardInputManager.prototype.keepPlaying = function (event) {
+//  event.preventDefault();
+//  this.emit("keepPlaying");
+//};
