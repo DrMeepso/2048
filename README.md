@@ -2,7 +2,7 @@
 
 [Play](https://drmeepso.github.io/2048/20ez/) now!
 
-# 2
+# This is 2
 2 is a 2048 clone but with the tiles decending in value!
 
 ## to do
