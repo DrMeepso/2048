@@ -167,7 +167,7 @@ GameManager.prototype.move = function (direction) {
           tile.updatePosition(positions.next);
 
           // Update the score
-          self.score += (1,022-merged.value);
+          self.score += (-1,022+merged.value);
 
           // The mighty 2048 tile
           if (merged.value === 2) self.won = true;
@@ -273,3 +273,13 @@ GameManager.prototype.tileMatchesAvailable = function () {
 GameManager.prototype.positionsEqual = function (first, second) {
   return first.x === second.x && first.y === second.y;
 };
+
+
+GameVer = 1.0
+if (localStorage.GV == undefined) {
+localStorage.GV = GameVer
+} else {
+if (localStorage.GV < GameVer) {
+localStorage.GV = GameVer
+localStorage.bestScore = 0
+}};
