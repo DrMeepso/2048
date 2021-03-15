@@ -167,7 +167,7 @@ GameManager.prototype.move = function (direction) {
           tile.updatePosition(positions.next);
 
           // Update the score
-          self.score += (1028-merged.value);
+          self.score += (merged.value / 2048);
 
           // The mighty 2048 tile
           if (merged.value === 2) self.won = true;
@@ -275,7 +275,7 @@ GameManager.prototype.positionsEqual = function (first, second) {
 };
 
 // Score reset code if the score sys has updated
-GameVer = 1.001
+GameVer = 1.002
 if (localStorage.GV == undefined) {
 localStorage.GV = GameVer
 } else {
