@@ -167,8 +167,19 @@ GameManager.prototype.move = function (direction) {
           tile.updatePosition(positions.next);
 
           // Update the score
-          self.score += (merged.value - 1024);
-
+          //self.score += merged.value;
+          
+          if (merged.value == 1024){self.score += 2}
+          if (merged.value == 512){self.score += 4}
+          if (merged.value == 256){self.score += 8}
+          if (merged.value == 128){self.score += 16}
+          if (merged.value == 64){self.score += 32}
+          if (merged.value == 32){self.score += 64}
+          if (merged.value == 16){self.score += 128}
+          if (merged.value == 8){self.score += 256}
+          if (merged.value == 4){self.score += 512}
+          if (merged.value == 2){self.score += 1024}
+          
           // The mighty 2048 tile
           if (merged.value === 2) self.won = true;
         } else {
