@@ -73,7 +73,7 @@ GameManager.prototype.addRandomTile = function () {
           &&
           !!self.grid.cells[cell.x + x][cell.y + y]
         ) {
-          var tocheck = self.grid.cells[cell.x + x][cell.y + y];
+          var tocheck = self.grid.cells[cell.x - x][cell.y - y];
           if (Math.random() < 0.8 && tocheck.value < bvalue) {
             bcell = cell;
             bvalue = tocheck.value;
@@ -89,7 +89,7 @@ GameManager.prototype.addRandomTile = function () {
       if (bvalue == 2147483647) {bvalue = 2;}
     }
 
-    var tile = new Tile(bcell, 2048);
+    var tile = new Tile(bcell, bvalue);
 
     this.grid.insertTile(tile);
   }
