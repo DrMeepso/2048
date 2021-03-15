@@ -5,10 +5,12 @@
 # This is 2
 2 is a 2048 clone but with the tiles decending in value!
 
+Made by DrMeepso Based on 2048 by hczhcz
+
+
+
 ## TODO
 - [x] Tiles merging down
 - [X] Tile colors remaped
 - [X] Get score working
 - [X] Finish and publish
-
-Made by DrMeepso Based on 2048 by hczhcz
